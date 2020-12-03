@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ms_poli_all,ms_poli all,model_ms_poli,,1,1,1,1
+access_ms_pendaftaran_all,ms_pendaftaran all,model_ms_pendaftaran,,1,1,1,1
+access_ms_pemeriksaan_all,ms_pemeriksaan all,model_ms_pemeriksaan,,1,1,1,1
+access_ms_resep_obat_all,ms_resep_obat all,model_ms_resep_obat,,1,1,1,1

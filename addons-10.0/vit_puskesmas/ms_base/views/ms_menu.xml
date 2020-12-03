@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+    	
+    	<menuitem id="ms_topmenu" name="Puskesmas" sequence="400"/>
+    	<menuitem id="ms_data_master_submenu" parent="ms_topmenu" name="Data Master" sequence="10"/>
+        <menuitem id="ms_transaksi_submenu" parent="ms_topmenu" name="Transaksi" sequence="20"/>
+		
+	</data>
+</odoo>

@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+        
+        <record model="ir.ui.view" id="ms_poli_tree_view">
+            <field name="name">ms.poli.tree</field>
+            <field name="model">ms.poli</field>
+            <field name="arch" type="xml">
+                <tree string="Poli" editable="top">
+                    <field name="kode"/>
+                    <field name="name"/>
+                </tree>
+             </field>
+        </record>
+        
+        <record id="view_ms_poli_search" model="ir.ui.view">
+            <field name="name">ms.poli.search</field>
+            <field name="model">ms.poli</field>
+            <field name="arch" type="xml">
+                <search string="Search Poli">
+                    <field name="name"/>
+                    <field name="kode"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="ms_poli_action">
+            <field name="name">Poli</field>
+            <field name="res_model">ms.poli</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="domain">[]</field>
+        </record>
+        
+        <record id="ms_poli_action_tree" model="ir.actions.act_window.view">
+            <field eval="1" name="sequence"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="ms_poli_tree_view"/>
+            <field name="act_window_id" ref="ms_poli_action"/>
+        </record>
+        
+        <menuitem action="ms_poli_action" id="ms_poli_menu" parent="ms_base.ms_data_master_submenu" sequence="30"/>
+        
+    </data>
+</odoo>
